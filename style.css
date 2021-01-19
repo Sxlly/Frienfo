@@ -62,7 +62,7 @@
     text-align: center;
 }
 
-.navbar_item {
+.navbar__item {
 
     height: 80px;
 }
@@ -138,7 +138,7 @@
         width: 100%;
         position: absolute;
         top: -1000px;
-        opacity: 0;
+        opacity: 1;
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
@@ -163,7 +163,7 @@
 
     }
 
-    .navbar__toggle.bar {
+    .navbar__toggle .bar {
 
         width: 25px;
         height: 3px;
@@ -196,7 +196,7 @@
 
     .navbar__btn {
 
-        padding-button: 2rem;
+        padding-bottom: 2rem;
 
     }
 
