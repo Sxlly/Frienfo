@@ -49,7 +49,7 @@
     font-size: 2rem;
 }
 
-.fa-gem {
+.fa-users {
 
     margin-right: 0.5rem;
 }
@@ -226,14 +226,12 @@
         transform: translateY(8px) rotate(45deg);
     }
 
-    #mobile-menu.is-active .bar:nth-child(1) {
+    #mobile-menu.is-active .bar:nth-child(3) {
         
-        transform: translateY(-8px) rotate(45deg);
+        transform: translateY(-8px) rotate(-45deg);
     }
-
-
-
-
-
 }
+
+/* New Section CSS */
+
 
