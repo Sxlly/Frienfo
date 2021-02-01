@@ -15,7 +15,6 @@ import ListIcon from '@material-ui/icons/List';
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import AccountCircleOutlinesIcon from "@material-ui/icons/AccountCircleOutlined";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-import { blue } from "@material-ui/core/colors";
 
 
 
@@ -51,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
     toolbar: {
 
         paddingRight: 45,
-        color: "white",
+        color: "rgba(13, 16, 36, 1)",
 
     },
 
@@ -201,7 +200,7 @@ function Home() {
     return (
         <div className={classes.root}>
             <CssBaseline />
-            <AppBar position="absolute" className={clsx(classes.appBar, open && classes.appBarShift)} style = {{ backgroundColor: "dark blue", color: "white"}}>
+            <AppBar position="absolute" className={clsx(classes.appBar, open && classes.appBarShift)} style = {{ backgroundColor: "rgba(13, 16, 36, 1)", color: "White"}}>
                 <Toolbar className={classes.toolbar}>
                     <IconButton
                         edge="start"
