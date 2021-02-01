@@ -61,8 +61,8 @@ const useStyles = makeStyles((theme) => ({
         alignItems: "center",
         justifyContent: "flex-end",
         padding: "0 8px",
-        width: 45,
-        height: 45,
+        width: 40,
+        height: 40,
         ...theme.mixins.toolbar,
     },
 
@@ -88,8 +88,8 @@ const useStyles = makeStyles((theme) => ({
     menuButton: {
 
         marginRight: 36,
-        width: 45,
-        height: 45,
+        width: 40,
+        height: 40,
     },
 
     menuButtonHidden: {

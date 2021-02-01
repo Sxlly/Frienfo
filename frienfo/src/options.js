@@ -77,7 +77,5 @@ export const Options = (
             <ListItemText primary="Import Friends List" style = {styles.text} />
         </ListItem>
 
-
-
     </div>
 )
