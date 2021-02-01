@@ -133,7 +133,6 @@ const styles = {
         justifySelf: "center",
         margin: "0 auto",
         height: "90vh",
-        backgroundColor: "rgba(13, 16, 36, 0.95)",
         zIndex: 1,
         width: "100%",
         maxWidth: "1300px",
@@ -144,7 +143,7 @@ const styles = {
 
         fontSize: "4rem",
         backgroundColor: "blue",
-        backgroundImage: "linear-gradient(to top, blue 0%, white 100%)",
+        backgroundImage: "linear-gradient(to top, blue 0%, white 50%, white 100%)",
         backgroundSize: "100%",
         WebkitBackgroundClip: "text",
         MozBackgroundClip: "text",
@@ -156,7 +155,7 @@ const styles = {
 
         fontSize: "2rem",
         backgroundColor: "blue",
-        backgroundImage: "linear-gradient(to top, black 0%, white 100%)",
+        backgroundImage: "linear-gradient(to top, blue 0%, white 50%, white 100%)",
         backgroundSize: "100%",
         WebkitBackgroundClip: "text",
         MozBackgroundClip: "text",
@@ -219,7 +218,7 @@ const styles = {
         
         fontSize: "4rem",
         backgroundColor: "blue",
-        backgroundImage: "linear-gradient(to top, blue 0%, white 100%)",
+        backgroundImage: "linear-gradient(to top, blue 0%, white 50%, white 100%)",
         backgroundSize: "100%",
         WebkitBackgroundClip: "text",
         MozBackgroundClip: "text",
