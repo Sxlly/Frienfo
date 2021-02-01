@@ -7,6 +7,8 @@ import reportWebVitals from './reportWebVitals';
 import Home from "./Home";
 import FriendsList from "./friendslist";
 import Insights from "./insights";
+import Import_FL from "./import";
+import Support from "./support";
 
 
 const rootElement = document.getElementById("root");
@@ -18,6 +20,8 @@ ReactDOM.render(
       <Route path = "/FriendsList" component = {FriendsList} />
       <Route path = "/Home" component = {Home} />
       <Route path = "/Insights" component = {Insights} />
+      <Route path = "/Import_FL" component = {Import_FL} />
+      <Route path = "/Support" component = {Support} />
     </Switch>
   </BrowserRouter>,
   rootElement

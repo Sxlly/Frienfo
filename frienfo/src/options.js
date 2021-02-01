@@ -76,20 +76,24 @@ export const Options = (
                 <ListItemText primary="Insight Tools" style = {styles.text} />
             </ListItem>
         </Link>
+        
+        <Link to = "/Import_FL" style = {styles.links} >
+            <ListItem button>
+                <ListItemIcon>
+                    <GroupAddIcon style = {styles.button} />
+                </ListItemIcon>
+                <ListItemText primary="Import Friends List" style = {styles.text} />
+            </ListItem>
+        </Link>
 
-        <ListItem button>
-            <ListItemIcon>
-                <GroupAddIcon style = {styles.button} />
-            </ListItemIcon>
-            <ListItemText primary="Import Friends List" style = {styles.text} />
-        </ListItem>
-
-        <ListItem button>
-            <ListItemIcon>
-                <ContactSupportIcon style = {styles.button} />
-            </ListItemIcon>
-            <ListItemText primary="Support" style = {styles.text} />
-        </ListItem>
+        <Link to = "/Support" style = {styles.links} >
+            <ListItem button>
+                <ListItemIcon>
+                    <ContactSupportIcon style = {styles.button} />
+                </ListItemIcon>
+                <ListItemText primary="Support" style = {styles.text} />
+            </ListItem>
+        </Link>
 
     </div>
 )
