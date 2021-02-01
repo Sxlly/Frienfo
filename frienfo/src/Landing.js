@@ -28,7 +28,7 @@ const styles = {
 
     navBar: {
 
-        backgroundColor: "black",
+        backgroundColor: "rgba(13, 16, 36, 0.95)",
         height: "80px",
         display: "flex",
         justifyContent: "center",
@@ -122,7 +122,7 @@ const styles = {
 
     main: {
 
-        backgroundColor: "black",
+        backgroundColor: "rgba(13, 16, 36, 1)",
     },
 
     mainContainer: {
@@ -133,7 +133,7 @@ const styles = {
         justifySelf: "center",
         margin: "0 auto",
         height: "90vh",
-        backgroundColor: "black",
+        backgroundColor: "rgba(13, 16, 36, 1)",
         zIndex: 1,
         width: "100%",
         maxWidth: "1300px",
@@ -208,7 +208,7 @@ const styles = {
 
     footerContainer: {
 
-        backgroundColor: "black",
+        backgroundColor: "rgba(13, 16, 36, 1)",
         padding: "5rem 0",
         display: "flex",
         flexDirection: "column",
