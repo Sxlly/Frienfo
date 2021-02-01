@@ -183,7 +183,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-function Home() {
+function FriendsList() {
 
     const classes = useStyles();
     const [open, setOpen] = React.useState(true);
@@ -257,4 +257,4 @@ function Home() {
 
 
 
-export default Home;
+export default FriendsList;

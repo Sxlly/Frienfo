@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 
 //Importing Pages
 import Home from "./Home";
+import FriendsList from "./friendslist";
 
 
 const rootElement = document.getElementById("root");
@@ -13,6 +14,7 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route exact path = "/" component = {Home} />
+      <Route path = "/FriendsList" component = {FriendsList} />
     </Switch>
   </BrowserRouter>,
   rootElement
