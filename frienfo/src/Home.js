@@ -16,7 +16,8 @@ import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import AccountCircleOutlinesIcon from "@material-ui/icons/AccountCircleOutlined";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 
-
+//import of dev made js files
+import { Options } from "./options";
 
 const drawerWidth = 240;
 
@@ -237,7 +238,7 @@ function Home() {
 
                 </div>
                 <List style={{ backgroundColor: "#ffffff"}}>
-                    Pages
+                    {Options}
                 </List>
             </Drawer>
 
