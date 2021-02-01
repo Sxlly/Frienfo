@@ -10,6 +10,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import ContactsIcon from '@material-ui/icons/Contacts';
 import BubbleChartIcon from '@material-ui/icons/BubbleChart';
 import GroupAddIcon from '@material-ui/icons/GroupAdd';
+import ContactSupportIcon from '@material-ui/icons/ContactSupport';
 
 
 const styles = {
@@ -75,6 +76,13 @@ export const Options = (
                 <GroupAddIcon style = {styles.button} />
             </ListItemIcon>
             <ListItemText primary="Import Friends List" style = {styles.text} />
+        </ListItem>
+
+        <ListItem button>
+            <ListItemIcon>
+                <ContactSupportIcon style = {styles.button} />
+            </ListItemIcon>
+            <ListItemText primary="Support" style = {styles.text} />
         </ListItem>
 
     </div>
