@@ -35,7 +35,7 @@
 
 #navbar__logo {
 
-    background-color: salmon;
+    background-color: white;
     background-image: linear-gradient(to top, blue 0%, white 100%);
     background-size: 100%;
     -webkit-background-clip: text;
@@ -169,7 +169,7 @@
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
-        background: black;
+        background: white;
     }
 
     .navbar__item {
@@ -454,11 +454,10 @@
     height: 525px;
     width: 400px;
     border-radius: 4px;
-    background-image: linear-gradient(
+    background-image: url("/images/pic3.jpg"), linear-gradient(
         to bottom,
         white 0%,
-        rgb(136, 125, 125) 100%),
-        url('/images/pic2.jpg');
+        rgb(136, 125, 125) 100%);
 
     background-size: cover;
     position: relative;
@@ -528,17 +527,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 #footer__logo {
 
-    color: white;
     display: flex;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
-
+    background-color: blue;
+    background-image: linear-gradient(to top, blue 0%, white 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .footer__links {
@@ -547,6 +552,14 @@
     max-width: 1000px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: blue;
+    background-image: linear-gradient(to top, blue 0%, white 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 
 }
 
@@ -560,10 +573,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     margin: 16px;
     text-align: left;
     width: 160px;
     box-sizing: border-box;
+    padding: 25;
 
 }
 
