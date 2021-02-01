@@ -28,7 +28,7 @@ const styles = {
 
     navBar: {
 
-        backgroundColor: "rgba(13, 16, 36, 0.95)",
+        backgroundColor: "rgba(13, 16, 36, 1)",
         height: "80px",
         display: "flex",
         justifyContent: "center",
@@ -122,7 +122,7 @@ const styles = {
 
     main: {
 
-        backgroundColor: "rgba(13, 16, 36, 1)",
+        backgroundColor: "rgba(13, 16, 36, 0.95)",
     },
 
     mainContainer: {
@@ -133,7 +133,7 @@ const styles = {
         justifySelf: "center",
         margin: "0 auto",
         height: "90vh",
-        backgroundColor: "rgba(13, 16, 36, 1)",
+        backgroundColor: "rgba(13, 16, 36, 0.95)",
         zIndex: 1,
         width: "100%",
         maxWidth: "1300px",
@@ -206,9 +206,32 @@ const styles = {
         width: "80%",
     },
 
+    mid: {
+
+        display: "flex",
+        justifyContent: "center",
+        backgroundColor: "rgba(13, 16, 36, 0.95)",
+        padding: "0 50px",
+    },
+
+    midH1: {
+
+        
+        fontSize: "4rem",
+        backgroundColor: "blue",
+        backgroundImage: "linear-gradient(to top, blue 0%, white 100%)",
+        backgroundSize: "100%",
+        WebkitBackgroundClip: "text",
+        MozBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+        MozTextFillColor: "transparent",
+
+        
+    },
+
     footerContainer: {
 
-        backgroundColor: "rgba(13, 16, 36, 1)",
+        backgroundColor: "rgba(13, 16, 36, 0.95)",
         padding: "5rem 0",
         display: "flex",
         flexDirection: "column",
@@ -324,8 +347,8 @@ function Landing() {
             </div>
 
 
-            <div>
-                <h1>Find Out Your Friend Habits</h1>
+            <div style = {styles.mid}>
+                <h1 style = {styles.midH1}>Find Out Your Friend Habits</h1>
             </div>
 
 
