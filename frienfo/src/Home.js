@@ -15,6 +15,7 @@ import ListIcon from '@material-ui/icons/List';
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import AccountCircleOutlinesIcon from "@material-ui/icons/AccountCircleOutlined";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
+import { blue } from "@material-ui/core/colors";
 
 
 
@@ -109,6 +110,12 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center",
         maxWidth: "215px",
         padding: 2,
+        backgroundColor: "white",
+        backgroundImage: "linear-gradient(to bottom, white 0%, white 50%, blue 100%)",
+        WebkitBackgroundClip: "text",
+        MozBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+        MozTextFillColor: "transparent",
     },
 
     drawerPaper: {
@@ -205,7 +212,7 @@ function Home() {
                     >
                         <ListIcon style={icon_styles.button} />
                     </IconButton>
-                    FRIENFO
+                    <h1 className={classes.logo}>FRIENFO</h1>
                     <AccountCircleOutlinesIcon style={icon_styles.button}>
                         <Badge badgeContent={5} />
                     </AccountCircleOutlinesIcon>
