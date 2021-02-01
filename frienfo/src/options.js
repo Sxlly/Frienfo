@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
@@ -50,19 +50,23 @@ export const Options = (
 
     <div>
 
-        <ListItem button>
-            <ListItemIcon>
-                <HomeIcon style = {styles.button} />
-            </ListItemIcon>
-            <ListItemText primary="Home" style = {styles.text} />
-        </ListItem>
+        <Link to = "/Home" style = {styles.links}>
+            <ListItem button>
+                <ListItemIcon>
+                    <HomeIcon style = {styles.button} />
+                </ListItemIcon>
+                <ListItemText primary="Home" style = {styles.text} />
+            </ListItem>
+        </Link>
 
-        <ListItem button>
-            <ListItemIcon>
-                <ContactsIcon style = {styles.button} />
-            </ListItemIcon>
-            <ListItemText primary="Friends List" style = {styles.text} />
-        </ListItem>
+        <Link to = "/FriendsList" style = {styles.links}>
+            <ListItem button>
+                <ListItemIcon>
+                    <ContactsIcon style = {styles.button} />
+                </ListItemIcon>
+                <ListItemText primary="Friends List" style = {styles.text} />
+            </ListItem>
+        </Link>
 
         <ListItem button>
             <ListItemIcon>

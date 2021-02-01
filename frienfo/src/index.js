@@ -15,6 +15,7 @@ ReactDOM.render(
     <Switch>
       <Route exact path = "/" component = {Home} />
       <Route path = "/FriendsList" component = {FriendsList} />
+      <Route path = "/Home" component = {Home} />
     </Switch>
   </BrowserRouter>,
   rootElement

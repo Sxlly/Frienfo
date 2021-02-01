@@ -248,6 +248,8 @@ function FriendsList() {
                 <Container maxWidth="lg" className={classes.container}>
                     <Grid container spacing={3}>
                     </Grid>
+
+                    FriendsList
                 </Container>
             </main>
         </div>

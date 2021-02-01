@@ -248,6 +248,8 @@ function Home() {
                 <Container maxWidth="lg" className={classes.container}>
                     <Grid container spacing={3}>
                     </Grid>
+
+                    Home
                 </Container>
             </main>
         </div>
