@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 //Importing Pages
 import Home from "./Home";
 import FriendsList from "./friendslist";
+import Insights from "./insights";
 
 
 const rootElement = document.getElementById("root");
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Route exact path = "/" component = {Home} />
       <Route path = "/FriendsList" component = {FriendsList} />
       <Route path = "/Home" component = {Home} />
+      <Route path = "/Insights" component = {Insights} />
     </Switch>
   </BrowserRouter>,
   rootElement

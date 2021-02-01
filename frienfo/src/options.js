@@ -68,12 +68,14 @@ export const Options = (
             </ListItem>
         </Link>
 
-        <ListItem button>
-            <ListItemIcon>
-                <BubbleChartIcon style = {styles.button} />
-            </ListItemIcon>
-            <ListItemText primary="Insight Tools" style = {styles.text} />
-        </ListItem>
+        <Link to = "/Insights" style = {styles.links} >
+            <ListItem button>
+                <ListItemIcon>
+                    <BubbleChartIcon style = {styles.button} />
+                </ListItemIcon>
+                <ListItemText primary="Insight Tools" style = {styles.text} />
+            </ListItem>
+        </Link>
 
         <ListItem button>
             <ListItemIcon>
