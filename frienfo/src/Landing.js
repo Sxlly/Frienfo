@@ -1,6 +1,6 @@
 import React from "react";
 import ListItem from "@material-ui/core/ListItem";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, StylesProvider } from "@material-ui/core/styles";
 import { AppBar, CssBaseline, IconButton, Toolbar } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import clsx from "clsx";
@@ -159,7 +159,55 @@ const styles = {
         MozBackgroundClip: "text",
         WebkitTextFillColor: "transparent",
         MozTextFillColor: "transparent",
-    }
+    },
+
+    mainP: {
+
+        marginTop: "1rem",
+        fontSize: "2rem",
+        fontWeight: 700,
+        color: "white",
+    },
+
+    mainButton: {
+
+        fontSize: "1rem",
+        backgroundImage: "linear-gradient(to top, black 0%, blue 100%)",
+        padding: "14px 32px",
+        border: "none",
+        borderRadius: "4px",
+        color: "white",
+        marginTop: "2rem",
+        cursor: "pointer",
+        position: "relative",
+        transition: "all 0.35s",
+        outline: "none",
+    },
+
+    mainButtonA: {
+
+        position: "relative",
+        zIndex: 2,
+        color: "white",
+        textDecoration: "none",
+    },
+
+    mainImgContainer: {
+
+        textAlign: "center",
+    },
+
+    mainImg: {
+
+        height: "80%",
+        width: "80%",
+    },
+
+
+
+
+
+
 
 
 
@@ -199,14 +247,14 @@ function Landing() {
                     <div>
                         <h1 style = {styles.mainH1}>Insight Into Your Friendships</h1>
                         <h2 style = {styles.mainH2}>Want To See Into The History Of Your Friendships</h2>
-                        <p>Frienfo is hear to help!</p>
-                        <button>
-                            <a href="/">Get Started</a>
+                        <p style = {styles.mainP}>Frienfo is hear to help!</p>
+                        <button style = {styles.mainButton}> 
+                            <a href="/" style = {styles.mainButtonA}>Get Started</a>
                         </button>
                     </div>
                 </div>
-                <div>
-                    <img src="images/pic1.svg" alt="pic" id="main__img" />
+                <div style = {styles.mainImgContainer}>
+                    <img src="src/images/pic1.svg" alt="pic" style = {styles.mainImg} />
                 </div>
             </div>
 
