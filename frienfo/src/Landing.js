@@ -47,8 +47,122 @@ const styles = {
         maxWidth: "1300px",
         margin: "0 auto",
         padding: "0 50px",
-        
+
     },
+
+    navbarLogo: {
+
+        backgroundColor: "White",
+        backgroundImage: "linear-gradient(to top, blue 0%, white 100%)",
+        backgroundSize: "100%",
+        WebkitBackgroundClip: "text",
+        MozBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+        MozTextFillColor: "transparent",
+        display: "flex",
+        alignItems: "center",
+        cursor: "pointer",
+        textDecoration: "none",
+        fontSize: "2rem",
+    },
+
+    navbarMenu: {
+
+        display: "flex",
+        alignItems: "center",
+        listStyle: "none",
+        textAlign: "center",
+
+    },
+
+    navbarItem: {
+
+        height: "80px",
+    },
+
+    navbarLinks: {
+
+        color: "white",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        textDecoration: "none",
+        padding: "0 1rem",
+        height: "100%",
+    },
+
+    navbarButton: {
+
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: "0 1rem",
+        width: "100%",
+    },
+
+    button: {
+
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        textDecoration: "none",
+        padding: "10px 20px",
+        height: "100%",
+        width: "100%",
+        border: "none",
+        outline: "none",
+        borderRadius: "4px",
+        backgroundColor: "blue",
+        color: "white",
+
+    },
+
+    main: {
+
+        backgroundColor: "black",
+    },
+
+    mainContainer: {
+
+        display: "flex",
+        GridTemplateColumns: "1fr 1fr",
+        alignItems: "center",
+        justifySelf: "center",
+        margin: "0 auto",
+        height: "90vh",
+        backgroundColor: "black",
+        zIndex: 1,
+        width: "100%",
+        maxWidth: "1300px",
+        padding: "0 50px",
+    },
+
+    mainH1: {
+
+        fontSize: "4rem",
+        backgroundColor: "blue",
+        backgroundImage: "linear-gradient(to top, blue 0%, white 100%)",
+        backgroundSize: "100%",
+        WebkitBackgroundClip: "text",
+        MozBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+        MozTextFillColor: "transparent",
+    },
+
+    mainH2: {
+
+        fontSize: "2rem",
+        backgroundColor: "blue",
+        backgroundImage: "linear-gradient(to top, black 0%, white 100%)",
+        backgroundSize: "100%",
+        WebkitBackgroundClip: "text",
+        MozBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+        MozTextFillColor: "transparent",
+    }
+
+
+
 
 
 }
@@ -59,30 +173,32 @@ const styles = {
 function Landing() {
 
     return (
-        
         <div style = {styles.root}>
+            
+
+
             <nav style = {styles.navBar}>
-                <div>
-                    <a href="/" id="navbar__logo"> <i class="fas fa-users"></i>FRIENFO</a>
-                    <div id="mobile-menu">
+                <div style = {styles.navbarContainer}>
+                    <a href="/" style = {styles.navbarLogo}>FRIENFO</a>
+                    <div>
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                    <ul>
-                        <li>
-                            <a href = "/">Log In</a>
+                    <ul style = {styles.navbarMenu}>
+                        <li style = {styles.navbarButton}>
+                            <a href = "/" style = {styles.button}>Log In</a>
                         </li>
                     </ul>
                 </div>
             </nav>
 
 
-            <div>
-                <div>
+            <div style = {styles.main}>
+                <div style = {styles.mainContainer}>
                     <div>
-                        <h1>Insight Into Your Friendships</h1>
-                        <h2>Want To See Into The History Of Your Friendships</h2>
+                        <h1 style = {styles.mainH1}>Insight Into Your Friendships</h1>
+                        <h2 style = {styles.mainH2}>Want To See Into The History Of Your Friendships</h2>
                         <p>Frienfo is hear to help!</p>
                         <button>
                             <a href="/">Get Started</a>
