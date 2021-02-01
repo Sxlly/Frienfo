@@ -203,6 +203,68 @@ const styles = {
         width: "80%",
     },
 
+    footerContainer: {
+
+        backgroundColor: "black",
+        padding: "5rem 0",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+    },
+
+    footerLogo : {
+
+        display: "flex",
+        alignItems: "center",
+        cursor: "pointer",
+        textDecoration: "none",
+        fontSize: "2rem",
+        backgroundColor: "blue",
+        backgroundImage: "linear-gradient(to top, blue 0%, white 100%)",
+        backgroundSize: "100%",
+        WebkitBackgroundClip: "text",
+        MozBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+        MozTextFillColor: "transparent",
+    },
+
+    footerLinks: {
+
+        width: "100%",
+        maxWidth: "1000px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "blue",
+        backgroundImage: "linear-gradient(to top, blue 0%, white 100%)",
+        backgroundSize: "100%",
+        WebkitBackgroundClip: "text",
+        MozBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+        MozTextFillColor: "transparent",
+    },
+
+    footerLinkWrapper: {
+
+        display: "flex",
+    },
+
+    footerLinkItems: {
+
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "flex-start",
+        justifyContent: "center",
+        margin: "16px",
+        textAlign: "left",
+        width: "160px",
+        boxSizing: "border-box",
+        padding: 25,
+    },
+
+
+
 
 
 
@@ -264,17 +326,17 @@ function Landing() {
             </div>
 
 
-            <div>
-                <div>
-                    <div>
-                        <div>
+            <div style = {styles.footerContainer}>
+                <div style = {styles.footerLinks}>
+                    <div style = {styles.footerLinkWrapper}>
+                        <div style = {styles.footerLinkItems}>
                             <h2>About Us</h2>
                             <a href="/">How It Works</a>
                             <a href="/">Testimonals</a>
                             <a href="/">Security</a>
                             <a href="/">Terms Of Service</a>
                         </div>
-                        <div>
+                        <div style = {styles.footerLinkItems}>
                             <h2>Contact Us</h2>
                             <a href="/">Contact</a>
                             <a href="/">Support</a>
@@ -282,13 +344,13 @@ function Landing() {
                             <a href="/">Sponsorships</a>
                         </div>
                     </div>
-                    <div>
-                        <div>
+                    <div style = {styles.footerLinkWrapper}>
+                        <div style = {styles.footerLinkItems}>
                             <h2>Tutorials</h2>
                             <a href="/">How To Use</a>
                             <a href="/">Frienfo Community</a>
                         </div>
-                        <div>
+                        <div style = {styles.footerLinkItems}>
                             <h2>Social Media</h2>
                             <a href="/">Instagram</a>
                             <a href="/">Facebook</a>
