@@ -11,6 +11,9 @@ import Grid from "@material-ui/core/Grid";
 import List from "@material-ui/core/List";
 import Typography from "@material-ui/core/Typography";
 
+//importing images file
+import {ReactComponent as Logo } from './pic1.svg';
+
 
 //Landing page css styling
 const styles = {
@@ -316,7 +319,7 @@ function Landing() {
                     </div>
                 </div>
                 <div style = {styles.mainImgContainer}>
-                    <img src="src/images/pic1.svg" alt="pic" style = {styles.mainImg} />
+                    <Logo style = {styles.mainImg} />
                 </div>
             </div>
 
