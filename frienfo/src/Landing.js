@@ -24,16 +24,37 @@ const styles = {
 function Landing() {
 
     return (
-        <nav>
+        
+        <div>
+            <nav>
+                <div>
+                    <a href="/" id="navbar__logo"> <i class="fas fa-users"></i>FRIENFO</a>
+                    <div id="mobile-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href = "/">Log In</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
             <div>
-                <a href="/" id="navbar__logo"> <i class="fas fa-users"></i>FRIENFO</a>
-                <div id="mobile-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div>
+                    <div>
+                        <h1>Insight Into Your Friendships</h1>
+                        <h2>Want To See Into The History Of Your Friendships</h2>
+                        <p>Frienfo is hear to help!</p>
+
+                    </div>
                 </div>
             </div>
-        </nav>
+        
+        </div>
     );
 
 }
