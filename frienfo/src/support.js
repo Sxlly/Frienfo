@@ -179,6 +179,11 @@ const useStyles = makeStyles((theme) => ({
         height: 280,
     },
 
+    links: {
+
+        textDecoration: "none",
+    }
+
 
 }));
 
@@ -217,9 +222,11 @@ function Support() {
                     <AccountCircleOutlinesIcon style={icon_styles.button}>
                         <Badge badgeContent={5} />
                     </AccountCircleOutlinesIcon>
-                    <ExitToAppIcon style={icon_styles.button}>
-                        <Badge badgeContent={6} />
-                    </ExitToAppIcon>
+                    <Link to = "/Landing" className={classes.links}>
+                        <ExitToAppIcon style={icon_styles.button}>
+                            <Badge badgeContent={6} />
+                        </ExitToAppIcon>
+                    </Link>
                 </Toolbar>
             </AppBar>
             <Drawer
