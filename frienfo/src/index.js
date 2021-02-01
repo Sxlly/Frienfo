@@ -9,6 +9,7 @@ import FriendsList from "./friendslist";
 import Insights from "./insights";
 import Import_FL from "./import";
 import Support from "./support";
+import Landing from "./Landing";
 
 
 const rootElement = document.getElementById("root");
@@ -16,12 +17,13 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route exact path = "/" component = {Home} />
+      <Route exact path = "/" component = {Landing} />
       <Route path = "/FriendsList" component = {FriendsList} />
       <Route path = "/Home" component = {Home} />
       <Route path = "/Insights" component = {Insights} />
       <Route path = "/Import_FL" component = {Import_FL} />
       <Route path = "/Support" component = {Support} />
+      <Route path = "/Landing" component = {Landing} />
     </Switch>
   </BrowserRouter>,
   rootElement
