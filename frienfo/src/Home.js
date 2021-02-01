@@ -1,6 +1,6 @@
 import React from "react";
 import ListItem from "@material-ui/core/ListItem";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, StylesProvider } from "@material-ui/core/styles";
 import { AppBar, CssBaseline, IconButton, Toolbar } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import clsx from "clsx";
@@ -179,6 +179,11 @@ const useStyles = makeStyles((theme) => ({
         height: 280,
     },
 
+    links: {
+
+        textDecoration: "none",
+    }
+
 
 }));
 
@@ -217,9 +222,11 @@ function Home() {
                     <AccountCircleOutlinesIcon style={icon_styles.button}>
                         <Badge badgeContent={5} />
                     </AccountCircleOutlinesIcon>
-                    <ExitToAppIcon style={icon_styles.button}>
-                        <Badge badgeContent={6} />
-                    </ExitToAppIcon>
+                    <Link to = "/Landing" className={classes.links}>
+                        <ExitToAppIcon style={icon_styles.button}>
+                            <Badge badgeContent={6} />
+                        </ExitToAppIcon>
+                    </Link>
                 </Toolbar>
             </AppBar>
             <Drawer
