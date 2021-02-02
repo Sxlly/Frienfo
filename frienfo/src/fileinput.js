@@ -1,5 +1,6 @@
 import React from "react";
 import { parse } from "papaparse";
+import Papa from "papaparse";
 
 
 class FileReader extends React.Component {

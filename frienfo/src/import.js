@@ -20,6 +20,7 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 
 //import of dev made js files
 import { Options } from "./options";
+import FileReader from "./fileinput";
 
 //importing images and svg's
 import { ReactComponent as Logo } from './importFriendsPic.svg';
@@ -206,25 +207,6 @@ function Import_FL() {
     const [open, setOpen] = React.useState(true);
     const [friends, setFriends] = React.useState([{}]);
 
-    function onChange(e) {
-
-        let files = e.target.files;
-        
-        let reader = new FileReader();
-        reader.readAsDataURL(files[0]);
-    
-        reader.onload=(e)=> {
-    
-            Array.from(e.dataTransfer.files)
-                .filter((file) => file.type === "text/csv")
-                .forEach(async (file) => {
-                    const text = await file.text();
-                    const result = parse(text, { header: true });
-                    setFriends((existing) => [...existing, ...result.data]);
-                });
-        }
-    }
-
     const handleDrawerOpen = () => {
         setOpen(true);
     };
@@ -290,27 +272,7 @@ function Import_FL() {
                     </Grid>
                     <h1 className={classes.inputH1}>Import Friends List</h1>
                     <div>
-                        <input 
-                        type="file" 
-                        name="file" 
-                        onChange={(e) => {
-
-                            e.preventDefault();
-
-                            let files = e.target.files;
-                            let reader = new FileReader();
-                            reader.readAsDataURL(files[0]);
-
-                            Array.from(e.dataTransfer.files)
-                                .filter((file) => file.type === "text/csv")
-                                .forEach(async (file) => {
-                                    const text = await file.text();
-                                    const result = parse(text, { header: true });
-                                    setFriends((existing) => [...existing, ...result.data]);
-                                });
-                            
-                        }} />
-
+                        <FileReader />
                     </div>
                     <ul>
                         {friends.map((friend) => (
