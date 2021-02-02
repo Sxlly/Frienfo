@@ -21,6 +21,9 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 //import of dev made js files
 import { Options } from "./options";
 
+//importing images and svg's
+import { ReactComponent as Logo } from './importFriendsPic.svg';
+
 const drawerWidth = 240;
 
 const icon_styles = {
@@ -204,7 +207,18 @@ const useStyles = makeStyles((theme) => ({
 
         display: "flex",
         justifyContent: "left",
-    }
+    },
+
+    inputImg: {
+
+        textAlign: "right",
+    },
+
+    img: {
+
+        height: "80%",
+        width: "80%",
+    },
 
 
 }));
@@ -283,6 +297,10 @@ function Import_FL() {
                     <Grid container spacing={3}>
                     </Grid>
                     <h1 className={classes.inputH1}>Import Friends List</h1>
+
+                    <div className={classes.inputImg}>
+                        <Logo className={classes.img} />
+                    </div>
                     
                     <div className={classes.inputBox}
 
