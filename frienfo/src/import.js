@@ -196,42 +196,34 @@ const useStyles = makeStyles((theme) => ({
 
     },
 
-    inputBox: {
-
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-    },
-
-    friendsList: {
-
-        display: "flex",
-        justifyContent: "left",
-    },
-
-    inputImg: {
-
-        textAlign: "right",
-    },
-
-    img: {
-
-        height: "80%",
-        width: "80%",
-    },
-
 
 }));
-
 
 
 function Import_FL() {
 
     const classes = useStyles();
     const [open, setOpen] = React.useState(true);
-    const [highlighted, setHighlighted] = React.useState(false);
     const [friends, setFriends] = React.useState([{}]);
 
+    function onChange(e) {
+
+        let files = e.target.files;
+        
+        let reader = new FileReader();
+        reader.readAsDataURL(files[0]);
+    
+        reader.onload=(e)=> {
+    
+            Array.from(e.dataTransfer.files)
+                .filter((file) => file.type === "text/csv")
+                .forEach(async (file) => {
+                    const text = await file.text();
+                    const result = parse(text, { header: true });
+                    setFriends((existing) => [...existing, ...result.data]);
+                });
+        }
+    }
 
     const handleDrawerOpen = () => {
         setOpen(true);
@@ -297,50 +289,34 @@ function Import_FL() {
                     <Grid container spacing={3}>
                     </Grid>
                     <h1 className={classes.inputH1}>Import Friends List</h1>
-
-                    <div className={classes.inputImg}>
-                        <Logo className={classes.img} />
-                    </div>
-                    
-                    <div className={classes.inputBox}
-
-                        onDragEnter = {() => {
-
-                            setHighlighted(true);
-                        }}
-
-                        onDragLeave = {() => {
-
-                            setHighlighted(false);
-                        }}
-
-                        onDragOver = {(e) => {
+                    <div>
+                        <input 
+                        type="file" 
+                        name="file" 
+                        onChange={(e) => {
 
                             e.preventDefault();
 
-                        }}
+                            let files = e.target.files;
+                            let reader = new FileReader();
+                            reader.readAsDataURL(files[0]);
 
-                        onDrop = {(e) => {
-
-                            e.preventDefault();
-                            console.log(e.dataTransfer.files);
                             Array.from(e.dataTransfer.files)
                                 .filter((file) => file.type === "text/csv")
                                 .forEach(async (file) => {
                                     const text = await file.text();
-                                    const result = parse(text, { header: true});
+                                    const result = parse(text, { header: true });
                                     setFriends((existing) => [...existing, ...result.data]);
                                 });
-                        }}
-                    >
+                            
+                        }} />
 
-                        Drop Friends List Here
                     </div>
-                    
-                    <ul className={classes.friendsList}>
-                        {friends.map((friend => <li key={friend.addDate}>
-                            <strong>{friend.name}</strong>: {friend.addDate}
-                        </li>
+                    <ul>
+                        {friends.map((friend) => (
+                            <li key={friend.addDate}>
+                                <strong>{friend.name}</strong>: {friend.addDate}
+                            </li>
                         ))}
                     </ul>
                 </Container>
