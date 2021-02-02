@@ -3,6 +3,7 @@ import ListItem from "@material-ui/core/ListItem";
 import { makeStyles } from "@material-ui/core/styles";
 import { AppBar, CssBaseline, IconButton, Toolbar } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import { parse } from "papaparse";
 import clsx from "clsx";
 import Container from "@material-ui/core/Container";
 import Drawer from "@material-ui/core/Drawer";
@@ -185,13 +186,39 @@ const useStyles = makeStyles((theme) => ({
     },
 
 
+    inputH1: {
+
+        display: "flex",
+        justifyContent: "center",
+
+    },
+
+    inputBox: {
+
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+    },
+
+    friendsList: {
+
+        display: "flex",
+        justifyContent: "left",
+    }
+
+
 }));
+
 
 
 function Import_FL() {
 
     const classes = useStyles();
     const [open, setOpen] = React.useState(true);
+    const [highlighted, setHighlighted] = React.useState(false);
+    const [friends, setFriends] = React.useState([{}]);
+
+
     const handleDrawerOpen = () => {
         setOpen(true);
     };
@@ -255,8 +282,49 @@ function Import_FL() {
                 <Container maxWidth="lg" className={classes.container}>
                     <Grid container spacing={3}>
                     </Grid>
+                    <h1 className={classes.inputH1}>Import Friends List</h1>
+                    
+                    <div className={classes.inputBox}
 
-                    Import
+                        onDragEnter = {() => {
+
+                            setHighlighted(true);
+                        }}
+
+                        onDragLeave = {() => {
+
+                            setHighlighted(false);
+                        }}
+
+                        onDragOver = {(e) => {
+
+                            e.preventDefault();
+
+                        }}
+
+                        onDrop = {(e) => {
+
+                            e.preventDefault();
+                            console.log(e.dataTransfer.files);
+                            Array.from(e.dataTransfer.files)
+                                .filter((file) => file.type === "text/csv")
+                                .forEach(async (file) => {
+                                    const text = await file.text();
+                                    const result = parse(text, { header: true});
+                                    setFriends((existing) => [...existing, ...result.data]);
+                                });
+                        }}
+                    >
+
+                        Drop Friends List Here
+                    </div>
+                    
+                    <ul className={classes.friendsList}>
+                        {friends.map((friend => <li key={friend.addDate}>
+                            <strong>{friend.name}</strong>: {friend.addDate}
+                        </li>
+                        ))}
+                    </ul>
                 </Container>
             </main>
         </div>
