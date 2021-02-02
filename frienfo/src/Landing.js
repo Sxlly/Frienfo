@@ -174,7 +174,7 @@ const styles = {
     mainButton: {
 
         fontSize: "1rem",
-        backgroundImage: "linear-gradient(to top, black 0%, blue 100%)",
+        backgroundImage: "linear-gradient(to top, blue 0%, blue 50%, white 100%)",
         padding: "14px 32px",
         border: "none",
         borderRadius: "4px",
@@ -288,16 +288,10 @@ const styles = {
         padding: 25,
     },
 
+    links: {
 
-
-
-
-
-
-
-
-
-
+        textDecoration: "none",
+    },
 
 
 }
@@ -335,9 +329,11 @@ function Landing() {
                         <h1 style = {styles.mainH1}>Insight Into Your Friendships</h1>
                         <h2 style = {styles.mainH2}>Want To See Into The History Of Your Friendships</h2>
                         <p style = {styles.mainP}>Frienfo is hear to help!</p>
-                        <button style = {styles.mainButton}> 
-                            <a href="/" style = {styles.mainButtonA}>Get Started</a>
-                        </button>
+                        <Link to = "/Home" style = {styles.links}>
+                            <button style = {styles.mainButton}> 
+                                <a href="/" style = {styles.mainButtonA}>Get Started</a>
+                            </button>
+                        </Link>
                     </div>
                 </div>
                 <div style = {styles.mainImgContainer}>
