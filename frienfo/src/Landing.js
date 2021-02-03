@@ -316,7 +316,9 @@ function Landing() {
                     </div>
                     <ul style = {styles.navbarMenu}>
                         <li style = {styles.navbarButton}>
-                            <a href = "/" style = {styles.button}>Log In</a>
+                            <Link to = "/LogIn" style = {styles.links}>
+                                <a href = "/" style = {styles.button}>Log In</a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
