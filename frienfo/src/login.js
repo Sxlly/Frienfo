@@ -98,11 +98,11 @@ function LogIn() {
                     </div>
                     <div style = {styles.formGroup}>
                         <label style = {styles.label}>Password</label>
-                        <input type = "password" name = "password" placeholder = "password" />
+                        <input style = {styles.input} type = "password" name = "password" placeholder = "password" />
                     </div>
                 </div>
             </div>
-            <div>
+            <div style = {styles.footer}>
                 <button type = "button" >
                     Login
                 </button>
