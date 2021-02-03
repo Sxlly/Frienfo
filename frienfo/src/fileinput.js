@@ -162,26 +162,13 @@ class FileReader extends React.Component {
                                 onChange={this.handleChange}
                             />
                         </div>
-
+                        <div style = {styles.footer}>
+                            <button style = {styles.button} type = "button" onClick = {this.importCSV}>
+                                Upload
+                            </button>
+                        </div>
                     </div>
-
-
-
-
-
                 </div>
-                <input
-                    className="csv-input"
-                    type="file"
-                    ref={input => {
-                        this.filesInput = input;
-                    }}
-                    name = "file"
-                    placeholder={null}
-                    onChange={this.handleChange}
-                />
-                <p />
-                <button onClick={this.importCSV}> Upload Now!</button>
             </div>
         );
     }
