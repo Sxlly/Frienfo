@@ -142,7 +142,20 @@ class FileReader extends React.Component {
         return (
 
             <div className="App" style = {styles.baseContainer}>
-                <h2>Import CSV File</h2>
+                <h2 style = {styles.header}>Import CSV File</h2>
+                <div style = {styles.content}>
+                    <div style = {styles.imageContainer}>
+                        <img src = {ImportImg} style = {styles.image} />
+                    </div>
+                    <div style = {styles.form}>
+                        
+                    </div>
+
+
+
+
+
+                </div>
                 <input
                     className="csv-input"
                     type="file"
