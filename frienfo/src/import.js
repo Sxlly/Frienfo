@@ -23,7 +23,6 @@ import { Options } from "./options";
 import FileReader from "./fileinput";
 
 //importing images and svg's
-import { ReactComponent as Logo } from './importFriendsPic.svg';
 
 const drawerWidth = 240;
 
@@ -190,14 +189,6 @@ const useStyles = makeStyles((theme) => ({
     },
 
 
-    inputH1: {
-
-        display: "flex",
-        justifyContent: "center",
-
-    },
-
-
 }));
 
 
@@ -273,7 +264,6 @@ function Import_FL() {
                     <h1 className={classes.inputH1}>Import Friends List</h1>
                     <div>
                         <FileReader />
-                        <Logo />
                     </div>
                     <ul>
                         {friends.map((friend) => (

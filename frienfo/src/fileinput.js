@@ -2,6 +2,105 @@ import React from "react";
 import { parse } from "papaparse";
 import Papa from "papaparse";
 
+//Importing images and svg's
+import ImportImg from "./importFriendsPic.svg"
+
+
+const styles = {
+
+    baseContainer: {
+
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+    },
+
+    header: {
+
+        fontSize: "24px",
+    
+    },
+
+    content: {
+
+        display: "flex",
+        flexDirection: "column",
+    },
+
+    imageContainer: {
+
+        width: "21em",
+        
+    },
+
+    image: {
+
+        width: "100%",
+        height: "100%",
+    },
+
+    form: {
+
+        marginTop: "2em",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+    },
+
+    formGroup: {
+
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "flex-start",
+        width: "fit-content",
+    },
+
+    label: {
+
+        fontSize: "20px",
+    },
+
+    input: {
+
+        marginTop: "6px",
+        minWidth: "18em",
+        height: "37px",
+        padding: "0px 10px",
+        fontSize: "16px",
+        backgroundColor: "gray",
+        border: "0",
+        borderRadius: "4px",
+        marginBottom: "31px",
+        transition: "all 250ms ease-in-out",
+
+    },
+
+    footer: {
+
+        marginTop: "1em",
+    },
+
+    button: {
+
+        fontSize: "21px",
+        padding: "5px 15px",
+        border: "0",
+        backgroundColor: "rgba(13, 16, 36, 1)",
+        color: "white",
+        borderRadius: "3px",
+        transition: "all 250ms ease-in-out",
+    },
+
+    links: {
+
+        textDecoration: "none",
+    }
+
+}
+
+
+
 
 class FileReader extends React.Component {
 
@@ -42,7 +141,7 @@ class FileReader extends React.Component {
 
         return (
 
-            <div className="App">
+            <div className="App" style = {styles.baseContainer}>
                 <h2>Import CSV File</h2>
                 <input
                     className="csv-input"
