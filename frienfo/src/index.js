@@ -10,8 +10,9 @@ import Insights from "./insights";
 import Import_FL from "./import";
 import Support from "./support";
 import Landing from "./Landing";
+import LogIn from "./LogIn";
 
-
+//Creating Root
 const rootElement = document.getElementById("root");
 
 ReactDOM.render(
@@ -24,6 +25,7 @@ ReactDOM.render(
       <Route path = "/Import_FL" component = {Import_FL} />
       <Route path = "/Support" component = {Support} />
       <Route path = "/Landing" component = {Landing} />
+      <Route path = "/LogIn" component = {LogIn} />
     </Switch>
   </BrowserRouter>,
   rootElement

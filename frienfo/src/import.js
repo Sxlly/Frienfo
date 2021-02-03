@@ -273,6 +273,7 @@ function Import_FL() {
                     <h1 className={classes.inputH1}>Import Friends List</h1>
                     <div>
                         <FileReader />
+                        <Logo />
                     </div>
                     <ul>
                         {friends.map((friend) => (
