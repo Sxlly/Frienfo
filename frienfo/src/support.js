@@ -20,6 +20,9 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 //import of dev made js files
 import { Options } from "./options";
 
+//import of images and svg's
+import SupportImg from "./SupportImg.svg";
+
 const drawerWidth = 240;
 
 const icon_styles = {
@@ -255,8 +258,8 @@ function Support() {
                 <Container maxWidth="lg" className={classes.container}>
                     <Grid container spacing={3}>
                     </Grid>
-
-                    Support
+                    <h1>Support</h1>
+                    <img src = {SupportImg} />
                 </Container>
             </main>
         </div>

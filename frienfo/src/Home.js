@@ -20,6 +20,9 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 //import of dev made js files
 import { Options } from "./options";
 
+//import of images and svg's
+import HomeImg from "./HomeImg.svg";
+
 const drawerWidth = 240;
 
 const icon_styles = {
@@ -255,8 +258,8 @@ function Home() {
                 <Container maxWidth="lg" className={classes.container}>
                     <Grid container spacing={3}>
                     </Grid>
-
-                    Home
+                    <h1>Home</h1>
+                    <img src = {HomeImg} />
                 </Container>
             </main>
         </div>
