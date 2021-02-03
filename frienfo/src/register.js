@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-export class LogIn extends React.Component {
+export class Register extends React.Component {
 
     constructor(props) {
         super(props);
@@ -11,7 +11,7 @@ export class LogIn extends React.Component {
     render() {
 
         return <div>
-            <div>Login</div>
+            <div>Register</div>
             <div>
                 <div>
                     <img />
@@ -22,6 +22,10 @@ export class LogIn extends React.Component {
                         <input type = "text" name = "username" placeholder = "username" />
                     </div>
                     <div>
+                        <label>Email</label>
+                        <input type = "email" name = "email" placeholder = "email" />
+                    </div>
+                    <div>
                         <label>Password</label>
                         <input type = "password" name = "password" placeholder = "password" />
                     </div>
@@ -29,7 +33,7 @@ export class LogIn extends React.Component {
             </div>
             <div>
                 <button type = "button" >
-                    Login
+                    Register
                 </button>
             </div>
         </div>
