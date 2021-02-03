@@ -10,7 +10,7 @@ import Insights from "./insights";
 import Import_FL from "./import";
 import Support from "./support";
 import Landing from "./Landing";
-import LogIn from "./LogIn";
+import LogIn from "./login";
 
 //Creating Root
 const rootElement = document.getElementById("root");
