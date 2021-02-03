@@ -2,15 +2,57 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-export class LogIn extends React.Component {
+const styles = {
 
-    constructor(props) {
-        super(props);
-    }
+    baseContainer: {
 
-    render() {
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+    },
 
-        return <div>
+    header: {
+
+        fontSize: "24px",
+    
+    },
+
+    content: {
+
+        display: "flex",
+        flexDirection: "column",
+    },
+
+    imageContainer: {
+
+        width: "21em",
+        
+    },
+
+    image: {
+
+        width: "100%",
+        height: "100%",
+    },
+
+    form: {
+
+        marginTop: "2em",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+    },
+
+
+}
+
+
+function LogIn() {
+
+    return (
+
+        <div style = {styles.baseContainer}>
             <div>Login</div>
             <div>
                 <div>
@@ -33,5 +75,7 @@ export class LogIn extends React.Component {
                 </button>
             </div>
         </div>
-    }
+    );
 }
+
+export default LogIn;

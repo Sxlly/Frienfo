@@ -11,6 +11,7 @@ import Import_FL from "./import";
 import Support from "./support";
 import Landing from "./Landing";
 import LogIn from "./login";
+import Register from "./register";
 
 //Creating Root
 const rootElement = document.getElementById("root");
@@ -26,6 +27,7 @@ ReactDOM.render(
       <Route path = "/Support" component = {Support} />
       <Route path = "/Landing" component = {Landing} />
       <Route path = "/LogIn" component = {LogIn} />
+      <Route path = "/Register" component = {Register} />
     </Switch>
   </BrowserRouter>,
   rootElement

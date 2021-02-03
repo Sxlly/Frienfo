@@ -2,15 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-export class Register extends React.Component {
+function Register() {
 
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
-
-        return <div>
+    return (
+        <div>
             <div>Register</div>
             <div>
                 <div>
@@ -37,5 +32,8 @@ export class Register extends React.Component {
                 </button>
             </div>
         </div>
-    }
+    );
+    
 }
+
+export default Register;
