@@ -75,18 +75,23 @@ const styles = {
 
     footer: {
 
-        marginTop: "3em",
+        marginTop: "1em",
     },
 
     button: {
 
         fontSize: "21px",
-        padding: "5px 20px",
+        padding: "5px 15px",
         border: "0",
         backgroundColor: "rgba(13, 16, 36, 1)",
         color: "white",
         borderRadius: "3px",
         transition: "all 250ms ease-in-out",
+    },
+
+    links: {
+
+        textDecoration: "none",
     }
 
 }
@@ -117,6 +122,13 @@ function LogIn() {
                 <button style = {styles.button} type = "button" >
                     Login
                 </button>
+            </div>
+            <div style = {styles.footer}>
+                <Link to = "/Landing" style = {styles.links} >
+                    <button style = {styles.button} type = "button" >
+                        Exit
+                    </button>
+                </Link>
             </div>
         </div>
     );
