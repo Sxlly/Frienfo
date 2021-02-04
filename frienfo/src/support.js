@@ -22,6 +22,7 @@ import { Options } from "./options";
 
 //import of images and svg's
 import SupportImg from "./SupportImg.svg";
+import FrienfoLogo from "./FrienfoLogo.png";
 
 const drawerWidth = 240;
 
@@ -221,7 +222,7 @@ function Support() {
                     >
                         <ListIcon style={icon_styles.button} />
                     </IconButton>
-                    <h1 className={classes.logo}>FRIENFO</h1>
+                    <img src = {FrienfoLogo} className={classes.logo} />
                     <AccountCircleOutlinesIcon style={icon_styles.button}>
                         <Badge badgeContent={5} />
                     </AccountCircleOutlinesIcon>

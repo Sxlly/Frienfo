@@ -22,7 +22,7 @@ import { Options } from "./options";
 
 //import of images and svg's
 import HomeImg from "./HomeImg.svg";
-import FrienfoLogo from "./FrienfoLogo2.png";
+import FrienfoLogo from "./FrienfoLogo.png";
 
 const drawerWidth = 240;
 
@@ -113,7 +113,7 @@ const useStyles = makeStyles((theme) => ({
 
         margin: "auto",
         textAlign: "center",
-        maxWidth: "80px",
+        maxWidth: "215px",
         padding: 2,
         backgroundColor: "white",
         backgroundImage: "linear-gradient(to bottom, white 0%, white 50%, blue 100%)",

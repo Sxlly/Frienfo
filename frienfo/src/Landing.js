@@ -13,7 +13,7 @@ import Typography from "@material-ui/core/Typography";
 
 //importing images file
 import {ReactComponent as Logo } from './pic1.svg';
-import FrienfoLogo from './FrienfoLogo2.png';
+import FrienfoLogo from './FrienfoLogo.png';
 
 
 //Landing page css styling

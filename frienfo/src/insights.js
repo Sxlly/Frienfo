@@ -20,6 +20,9 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 //import of dev made js files
 import { Options } from "./options";
 
+//import of images
+import FrienfoLogo from "./FrienfoLogo.png";
+
 const drawerWidth = 240;
 
 const icon_styles = {
@@ -218,7 +221,7 @@ function Insights() {
                     >
                         <ListIcon style={icon_styles.button} />
                     </IconButton>
-                    <h1 className={classes.logo}>FRIENFO</h1>
+                    <img src = {FrienfoLogo} className={classes.logo} />
                     <AccountCircleOutlinesIcon style={icon_styles.button}>
                         <Badge badgeContent={5} />
                     </AccountCircleOutlinesIcon>

@@ -23,6 +23,7 @@ import { Options } from "./options";
 import FileReader from "./fileinput";
 
 //importing images and svg's
+import FrienfoLogo from "./FrienfoLogo.png";
 
 const drawerWidth = 240;
 
@@ -224,7 +225,7 @@ function Import_FL() {
                     >
                         <ListIcon style={icon_styles.button} />
                     </IconButton>
-                    <h1 className={classes.logo}>FRIENFO</h1>
+                    <img src = {FrienfoLogo} className={classes.logo} />
                     <AccountCircleOutlinesIcon style={icon_styles.button}>
                         <Badge badgeContent={5} />
                     </AccountCircleOutlinesIcon>
