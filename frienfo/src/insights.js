@@ -259,8 +259,8 @@ function Insights() {
                 <Container maxWidth="lg" className={classes.container}>
                     <Grid container spacing={3}>
                     </Grid>
-
-                    Insights
+                    <h1>Insight Tools</h1>
+                    <img src = {InsightsImg} />
                 </Container>
             </main>
         </div>
