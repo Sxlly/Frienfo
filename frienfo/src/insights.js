@@ -22,6 +22,7 @@ import { Options } from "./options";
 
 //import of images
 import FrienfoLogo from "./FrienfoLogo.png";
+import InsightsImg from "./InsightsImg.svg";
 
 const drawerWidth = 240;
 
