@@ -13,6 +13,7 @@ import Typography from "@material-ui/core/Typography";
 
 //importing images file
 import {ReactComponent as Logo } from './pic1.svg';
+import FrienfoLogo from './FrienfoLogo2.png';
 
 
 //Landing page css styling
@@ -308,7 +309,7 @@ function Landing() {
 
             <nav style = {styles.navBar}>
                 <div style = {styles.navbarContainer}>
-                    <a href="/" style = {styles.navbarLogo}>FRIENFO</a>
+                    <img src = {FrienfoLogo}  />
                     <div>
                         <span></span>
                         <span></span>

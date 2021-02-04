@@ -22,6 +22,7 @@ import { Options } from "./options";
 
 //import of images and svg's
 import HomeImg from "./HomeImg.svg";
+import FrienfoLogo from "./FrienfoLogo2.png";
 
 const drawerWidth = 240;
 
@@ -112,7 +113,7 @@ const useStyles = makeStyles((theme) => ({
 
         margin: "auto",
         textAlign: "center",
-        maxWidth: "215px",
+        maxWidth: "80px",
         padding: 2,
         backgroundColor: "white",
         backgroundImage: "linear-gradient(to bottom, white 0%, white 50%, blue 100%)",
@@ -221,7 +222,7 @@ function Home() {
                     >
                         <ListIcon style={icon_styles.button} />
                     </IconButton>
-                    <h1 className={classes.logo}>FRIENFO</h1>
+                    <img src = {FrienfoLogo} className={classes.logo} />
                     <AccountCircleOutlinesIcon style={icon_styles.button}>
                         <Badge badgeContent={5} />
                     </AccountCircleOutlinesIcon>
