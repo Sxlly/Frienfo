@@ -22,6 +22,7 @@ import { Options } from "./options";
 
 //import of images
 import FrienfoLogo from "./FrienfoLogo.png";
+import FriendsImg from "./FriendsImg.svg";
 
 const drawerWidth = 240;
 
@@ -258,8 +259,8 @@ function FriendsList() {
                 <Container maxWidth="lg" className={classes.container}>
                     <Grid container spacing={3}>
                     </Grid>
-
-                    FriendsList
+                    <h1>Friends List</h1>
+                    <img src = {FriendsImg} />
                 </Container>
             </main>
         </div>
